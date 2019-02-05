@@ -1,13 +1,25 @@
 # Lightning Donate Plugin
 
-A Node.js server for safely generating Bitcoin Lightining Network invoices in QR code format without exposing your node's LND REST service. No frontend logic required to create the codes, simply add an image tag with the desired parameters onto your web page.
+A Node.js server for safely generating Bitcoin Lightining Network invoices in QR code format without exposing your node's LND REST service. No frontend logic required to create the codes, simply add an image tag with the desired parameters onto your web page. You can also generate an invoice string that can be copied to the user's clipboard using an iframe.
 
+image tag
 ```
 // Preset amount
 <img src="http://YOUR_URL/">
 
 // Custom
 <img src="http://YOUR_URL/ln/REQUEST_AMOUNT/MESSAGE">
+
+```
+
+iframe tag
+```
+// Preset amount
+<iframe src="http://YOUR_URL/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+
+// Custom
+<iframe src="http://localhost:3000/ln/text/500/Beer" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+
 ```
 
 ## Getting Started
@@ -70,11 +82,21 @@ Example:
 // Custom amount via URL
 <img src="http://btarpbits.com:3000/ln/AMOUNT/MESSAGE">
 <img src="http://btarpbits.com:3000/ln/500/Hello%20world!">
+
+
+// Preset amount
+<iframe src="http://btarpbits.com:3000/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+
+// Custom
+<iframe src="http://btarpbits.com:3000/ln/text/500/Beer" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+
 ```
 
 Results:
 
-[Preset amount](http://btarpbits.com:3000/)  |  [Custom amount via URL](http://btarpbits.com:3000/ln/500/Hello%20world!)
+[Preset amount image](http://btarpbits.com:3000/)  |  [Custom amount image via URL](http://btarpbits.com:3000/ln/500/Hello%20world!)
+
+[Preset amount iframe](http://btarpbits.com:3000/ln/text)  |  [Custom amount iframe via URL](http://btarpbits.com:3000/ln/text/500/Beer)
 
 ## Live Example
 

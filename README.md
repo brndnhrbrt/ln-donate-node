@@ -70,3 +70,5 @@ Results:
 ## Live Example
 
 [http://brndnhrbrt.github.io/donate.test.html](http://brndnhrbrt.github.io/donate.test.html)
+
+Uses [https://github.com/brndnhrbrt/ln-donate-frontend](https://github.com/brndnhrbrt/ln-donate-frontend)

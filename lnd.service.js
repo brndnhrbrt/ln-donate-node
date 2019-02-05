@@ -1,7 +1,7 @@
 const request = require('request');
 const config = require('./config');
 
-exports.createInvoice = function() {
+exports.createInvoice = function(requestAmount, requestMemo) {
 
     const promise = new Promise((resolve, reject) => {
 
@@ -15,8 +15,8 @@ exports.createInvoice = function() {
             rejectUnauthorized: false,
             body: JSON.stringify({
                 "private": false,
-                "memo": config.memo ,
-                "value": "100"
+                "memo": requestMemo ,
+                "value": requestAmount
             })
         };
         

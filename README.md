@@ -64,8 +64,7 @@ Example:
 
 Results:
 
-[Preset amount](http://btarpbits.com:3000/)
-[Custom amount via URL](http://btarpbits.com:3000/ln/500/Hello%20world!)
+[Preset amount](http://btarpbits.com:3000/)  |  [Custom amount via URL](http://btarpbits.com:3000/ln/500/Hello%20world!)
 
 ## Live Example
 

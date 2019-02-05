@@ -48,7 +48,7 @@ module.exports = {
 
 #### Getting the macaroon
 
-You must copy and past the output of this command into your config file
+You must copy and paste the output of this command into your config file
 
 ```
 xxd -ps -u -c 1000 PATH_TO_MACAROON/admin.macaroon

@@ -104,4 +104,4 @@ Results:
 
 [http://brndnhrbrt.github.io/donate.test.html](http://brndnhrbrt.github.io/donate.test.html) - using [https://github.com/brndnhrbrt/ln-donate-frontend](https://github.com/brndnhrbrt/ln-donate-frontend)
 
-[http://btarpbits.com:3000/ln/text/500/Beer](http://btarpbits.com:3000/ln/text/500/github) - iframe example
+[http://btarpbits.com:3000/ln/text/500/Beer](http://btarpbits.com:3000/ln/text/500/github) - text format example

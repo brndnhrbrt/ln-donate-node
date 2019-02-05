@@ -1,6 +1,6 @@
 # Lightning Donate Plugin
 
-A Node.js server for safely generating Bitcoin Lightining Network invoices in QR code or text format without exposing your node's LND REST service. No frontend logic required to create the codes, simply add an image tag with the desired parameters onto your web page. You can also generate an invoice string that can be copied to the user's clipboard using an iframe.
+A Node.js server for safely generating Bitcoin Lightining Network invoices in QR code or text format without exposing your node's LND REST service. No frontend logic required to create the codes, simply add an image tag with the desired parameters onto your web page. The text format can be copied to the user's clipboard using an iframe.
 
 image tag
 ```

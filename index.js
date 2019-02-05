@@ -17,6 +17,13 @@ app.get('/ln/:amount/:message', (req, res) => {
     else {
         amount = parseInt(amount);
         amount = Math.abs(amount);
+
+        if(amount > config.maxRequestAmount) {
+            amount = config.maxRequestAmount;
+        } else if(amount < config.minRequestAmount) {
+            amount = config.minRequestAmount;
+        }
+
         if(message.length > 50) {
             message = message.slice(0, 50);
         }

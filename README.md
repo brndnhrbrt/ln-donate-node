@@ -30,6 +30,8 @@ module.exports = {
     lndHost: '<insert your LND ip here>:<insert your LND REST port here>',
     port: process.env.PORT || 3000,
     requestAmount: 100,
+    minRequestAmount: 15,
+    maxRequestAmount: 10000,
     memo: 'Thanks for donating!',
     errorImage: '<see sample config>'
 };

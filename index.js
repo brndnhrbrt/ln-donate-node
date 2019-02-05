@@ -14,7 +14,7 @@ app.get('*', (req, res) => {
             try {
                 var txData = JSON.parse(response);
                 if(!txData.payment_request) throw 'ERROR';                
-            } catch {
+            } catch(err) {
                 return res.send('ERROR');
             }
             QRCode.toDataURL(txData.payment_request, (err, url) => {

@@ -18,7 +18,7 @@ iframe tag
 <iframe src="http://YOUR_URL/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 // Custom
-<iframe src="http://localhost:3000/ln/text/500/Beer" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+<iframe src="http://YOUR_URL/ln/text/500/Beer" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 ```
 

@@ -59,4 +59,4 @@ Example:
 
 Result:
 
-![Sample donate code](http://btarpbits.com:3000/)
+![Sample donate code](https://i.imgur.com/XHT9SAK.png)

@@ -72,18 +72,12 @@ xxd -ps -u -c 1000 PATH_TO_MACAROON/admin.macaroon
 
 Serve as image:
 ```
-<img src="YOUR_URL_HERE">
-```
-
-Example:
-
-```
 // Preset amount
-<img src="http://btarpbits.com:3000/">
+<img src="YOUR_URL_HERE">
 
 // Custom amount via URL parameters
-<img src="http://btarpbits.com:3000/ln/AMOUNT/MESSAGE">
-<img src="http://btarpbits.com:3000/ln/500/Hello%20world!">
+<img src="http://YOUR_URL_HERE/ln/AMOUNT/MESSAGE">
+
 ```
 
 Serve as text:

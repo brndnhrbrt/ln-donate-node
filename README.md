@@ -84,10 +84,10 @@ Serve as text:
 
 ```
 // Preset amount
-<iframe src="http://btarpbits.com:3000/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+<iframe src="http://YOUR_URL_HERE/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 // Custom
-<iframe src="http://btarpbits.com:3000/ln/text/500/Beer" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+<iframe src="http://YOUR_URL_HERE/ln/text/AMOUNT/MESSAGE" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 ```
 

@@ -16,6 +16,7 @@ app.get('/ln/:amount/:message', (req, res) => {
     if(!amount || !message || isNaN(amount)) lndService.sendImage(res, config.errorImage);
     else {
         amount = parseInt(amount);
+        amount = Math.abs(amount);
         if(message.length > 50) {
             message = message.slice(0, 50);
         }

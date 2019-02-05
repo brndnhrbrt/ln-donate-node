@@ -54,12 +54,18 @@ Serve as image:
 Example:
 
 ```
+// request the default amount
 <img src="http://btarpbits.com:3000/">
+
+// request a custom amount
+<img src="http://btarpbits.com:3000/ln/AMOUNT/MESSAGE">
+<img src="http://btarpbits.com:3000/ln/500/Hello%20world!">
 ```
 
 Results:
 
 [http://brndnhrbrt.github.io/donate.test.html](http://brndnhrbrt.github.io/donate.test.html)
+
 
 
 Sample:

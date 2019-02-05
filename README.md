@@ -54,10 +54,10 @@ Serve as image:
 Example:
 
 ```
-// request the default amount
+// Preset amount
 <img src="http://btarpbits.com:3000/">
 
-// request a custom amount
+// Custom amount via URL
 <img src="http://btarpbits.com:3000/ln/AMOUNT/MESSAGE">
 <img src="http://btarpbits.com:3000/ln/500/Hello%20world!">
 ```

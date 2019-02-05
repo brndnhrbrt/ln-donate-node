@@ -79,7 +79,7 @@ Example:
 // Preset amount
 <img src="http://btarpbits.com:3000/">
 
-// Custom amount via URL
+// Custom amount via URL parameters
 <img src="http://btarpbits.com:3000/ln/AMOUNT/MESSAGE">
 <img src="http://btarpbits.com:3000/ln/500/Hello%20world!">
 
@@ -94,9 +94,9 @@ Example:
 
 Results:
 
-[Preset amount image](http://btarpbits.com:3000/)  |  [Custom amount image via URL](http://btarpbits.com:3000/ln/500/Hello%20world!)
+[Preset amount image](http://btarpbits.com:3000/)  |  [Custom amount image via URL parameters](http://btarpbits.com:3000/ln/500/Hello%20world!)
 
-[Preset amount iframe](http://btarpbits.com:3000/ln/text)  |  [Custom amount iframe via URL](http://btarpbits.com:3000/ln/text/500/Beer)
+[Preset amount iframe](http://btarpbits.com:3000/ln/text)  |  [Custom amount iframe via URL parameters](http://btarpbits.com:3000/ln/text/500/Beer)
 
 ## Live Example
 

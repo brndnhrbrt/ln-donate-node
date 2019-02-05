@@ -84,8 +84,11 @@ Example:
 // Custom amount via URL parameters
 <img src="http://btarpbits.com:3000/ln/AMOUNT/MESSAGE">
 <img src="http://btarpbits.com:3000/ln/500/Hello%20world!">
+```
 
+Serve as text:
 
+```
 // Preset amount
 <iframe src="http://btarpbits.com:3000/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 

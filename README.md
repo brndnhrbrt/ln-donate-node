@@ -57,6 +57,11 @@ Example:
 <img src="http://btarpbits.com:3000/">
 ```
 
-Result (Sample):
+Results:
+
+[http://brndnhrbrt.github.io/donate.test.html](http://brndnhrbrt.github.io/donate.test.html)
+
+
+Sample:
 
 ![Sample donate code](https://i.imgur.com/XHT9SAK.png)

@@ -1,6 +1,6 @@
 # Lightning Donate Plugin
 
-A Node.js server for safely generating Bitcoin Lightining Network invoices in QR code format without exposing your node's REST service.
+A Node.js server for safely generating Bitcoin Lightining Network invoices in QR code format without exposing your node's LND REST service.
 
 ## Getting Started
 
@@ -16,9 +16,9 @@ npm start
 
 ### Requirements
 
-1. Your node must running lighting with LND
-2. The node's REST service must be enabled
-3. The app server must be able to connect to your node's REST service
+1. Your node must be running lighting with LND
+2. The node's LND REST service must be enabled
+3. The app server must be able to connect to your node's LND REST service
 
 ### Creating the config file
 

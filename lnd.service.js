@@ -45,3 +45,12 @@ exports.createQR = function(response) {
     return promise;
 
 }
+
+exports.sendImage = function(res, imageString) {
+    var img = new Buffer(imageString.split(',')[1], 'base64');
+    res.writeHead(200, {
+        'Content-Type': 'image/png',
+        'Content-Length': img.length 
+    });
+    res.end(img);
+}

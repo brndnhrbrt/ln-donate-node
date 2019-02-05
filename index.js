@@ -13,24 +13,19 @@ app.get('*', (req, res) => {
         .then(response => {
             try {
                 var txData = JSON.parse(response);
-                if(!txData.payment_request) throw 'ERROR';                
+                if(!txData.payment_request) throw 'ERROR';
             } catch(err) {
-                return res.send('ERROR');
+                return lndService.sendImage(res, config.errorImage);
             }
             QRCode.toDataURL(txData.payment_request, (err, url) => {
                 if(err || !url) {
-                    res.send('ERROR');
+                    lndService.sendImage(res, config.errorImage);
                 } else {
-                    var img = new Buffer(url.split(',')[1], 'base64');
-                    res.writeHead(200, {
-                    'Content-Type': 'image/png',
-                    'Content-Length': img.length 
-                    });
-                    res.end(img);
+                    lndService.sendImage(res, url);
                 }
             });
-        }, err => {
-            res.send('ERROR');
+        }, err => {            
+            lndService.sendImage(res, config.errorImage);
         });
 });
 

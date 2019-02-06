@@ -1,6 +1,6 @@
 # Lightning Donate Plugin
 
-A Node.js server for safely generating Bitcoin Lightining Network invoices in QR code format without exposing your node's LND REST service. No frontend logic required to create the codes, simply add an image tag with the desired parameters onto your web page. You can also generate an invoice string that can be copied to the user's clipboard using an iframe.
+A Node.js server for safely generating Bitcoin Lightining Network invoices in QR code or text format without exposing your node's LND REST service. No frontend logic required to create the codes, simply add an image tag with the desired parameters onto your web page. The text format can be copied to the user's clipboard using an iframe.
 
 image tag
 ```
@@ -17,7 +17,7 @@ iframe tag
 // Preset amount
 <iframe src="http://YOUR_URL/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
-// Custom
+// Request 500 satoshi with memo 'Beer'
 <iframe src="http://YOUR_URL/ln/text/500/Beer" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 ```
@@ -45,7 +45,7 @@ npm start
 ### Creating the config file
 
 ```
-// Sample config
+// Sample config - see config.sample.js
 
 module.exports = {
     macaroon: '<insert your macaroon in string format here>',
@@ -55,7 +55,7 @@ module.exports = {
     minRequestAmount: 15,
     maxRequestAmount: 10000,
     memo: 'Thanks for donating!',
-    errorImage: '<see sample config>'
+    errorImage: '<see config.sample.js>'
 };
 
 ```
@@ -72,25 +72,22 @@ xxd -ps -u -c 1000 PATH_TO_MACAROON/admin.macaroon
 
 Serve as image:
 ```
-<img src="YOUR_URL_HERE">
-```
-
-Example:
-
-```
 // Preset amount
-<img src="http://btarpbits.com:3000/">
+<img src="YOUR_URL_HERE">
 
 // Custom amount via URL parameters
-<img src="http://btarpbits.com:3000/ln/AMOUNT/MESSAGE">
-<img src="http://btarpbits.com:3000/ln/500/Hello%20world!">
+<img src="http://YOUR_URL_HERE/ln/AMOUNT/MESSAGE">
 
+```
 
+Serve as text:
+
+```
 // Preset amount
-<iframe src="http://btarpbits.com:3000/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+<iframe src="http://YOUR_URL_HERE/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 // Custom
-<iframe src="http://btarpbits.com:3000/ln/text/500/Beer" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
+<iframe src="http://YOUR_URL_HERE/ln/text/AMOUNT/MESSAGE" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 ```
 
@@ -104,4 +101,4 @@ Results:
 
 [http://brndnhrbrt.github.io/donate.test.html](http://brndnhrbrt.github.io/donate.test.html) - using [https://github.com/brndnhrbrt/ln-donate-frontend](https://github.com/brndnhrbrt/ln-donate-frontend)
 
-[http://btarpbits.com:3000/ln/text/500/Beer](http://btarpbits.com:3000/ln/text/500/github) - iframe example
+[http://btarpbits.com:3000/ln/text/500/github](http://btarpbits.com:3000/ln/text/500/github) - text format example

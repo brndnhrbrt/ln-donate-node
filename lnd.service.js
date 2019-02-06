@@ -36,16 +36,6 @@ exports.createInvoice = function(requestAmount, requestMemo) {
 
 }
 
-exports.createQR = function(response) {
-
-    const promise = new Promise((resolve, reject) => {
-
-    });
-
-    return promise;
-
-}
-
 exports.sendImage = function(res, imageString) {
     var img = new Buffer(imageString.split(',')[1], 'base64');
     res.writeHead(200, {

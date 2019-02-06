@@ -17,7 +17,7 @@ iframe tag
 // Preset amount
 <iframe src="http://YOUR_URL/ln/text" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
-// Custom
+// Request 500 satoshi with memo 'Beer'
 <iframe src="http://YOUR_URL/ln/text/500/Beer" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 ```

@@ -45,7 +45,7 @@ npm start
 ### Creating the config file
 
 ```
-// Sample config
+// Sample config - see config.sample.js
 
 module.exports = {
     macaroon: '<insert your macaroon in string format here>',
@@ -55,7 +55,7 @@ module.exports = {
     minRequestAmount: 15,
     maxRequestAmount: 10000,
     memo: 'Thanks for donating!',
-    errorImage: '<see sample config>'
+    errorImage: '<see config.sample.js>'
 };
 
 ```

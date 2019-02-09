@@ -90,15 +90,18 @@ Serve as text:
 <iframe src="http://YOUR_URL_HERE/ln/text/AMOUNT/MESSAGE" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 ```
+I'm in the process of moving to a better server. Examples are down for now
 
 Results:
 
-[Preset amount image](http://btarpbits.com:3000/)  |  [Custom amount image via URL parameters](http://btarpbits.com:3000/ln/500/Hello%20world!)
+~~[Preset amount image](http://btarpbits.com:3000/)  |  [Custom amount image via URL parameters](http://btarpbits.com:3000/ln/500/Hello%20world!)~~
 
-[Preset amount iframe](http://btarpbits.com:3000/ln/text)  |  [Custom amount iframe via URL parameters](http://btarpbits.com:3000/ln/text/500/Beer)
+~~[Preset amount iframe](http://btarpbits.com:3000/ln/text)  |  [Custom amount iframe via URL parameters](http://btarpbits.com:3000/ln/text/500/Beer)~~
 
-## Live Example
+## Live Example 
 
-[http://brndnhrbrt.github.io/donate.test.html](http://brndnhrbrt.github.io/donate.test.html) - using [https://github.com/brndnhrbrt/ln-donate-frontend](https://github.com/brndnhrbrt/ln-donate-frontend)
+I'm in the process of moving to a better server. Examples are down for now
 
-[http://btarpbits.com:3000/ln/text/500/github](http://btarpbits.com:3000/ln/text/500/github) - text format example
+~~[http://brndnhrbrt.github.io/donate.test.html](http://brndnhrbrt.github.io/donate.test.html) - using [https://github.com/brndnhrbrt/ln-donate-frontend](https://github.com/brndnhrbrt/ln-donate-frontend)~~
+
+~~[http://btarpbits.com:3000/ln/text/500/github](http://btarpbits.com:3000/ln/text/500/github) - text format example~~

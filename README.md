@@ -90,7 +90,6 @@ Serve as text:
 <iframe src="http://YOUR_URL_HERE/ln/text/AMOUNT/MESSAGE" width="300" height="40" frameBorder="0">Browser not compatible.</iframe>
 
 ```
-I'm in the process of moving to a better server. Examples are down for now
 
 Results:
 
@@ -99,7 +98,5 @@ Results:
 [Preset amount iframe](http://www.btarpbits.com/ln/text)  |  [Custom amount iframe via URL parameters](http://www.btarpbits.com/ln/text/500/Beer)
 
 ## Live Example 
-
-I'm in the process of moving to a better server. Examples are down for now
 
 [Sample Page with custom input form](http://www.btarpbits.com/sample) - using [https://github.com/brndnhrbrt/ln-donate-frontend](https://github.com/brndnhrbrt/ln-donate-frontend)

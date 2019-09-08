@@ -13,6 +13,8 @@ exports.createInvoice = function(requestAmount, requestMemo) {
                 'Grpc-Metadata-macaroon': config.macaroon
             },
             rejectUnauthorized: false,
+            requestCert: true,
+            agent: false,
             body: JSON.stringify({
                 "private": false,
                 "memo": requestMemo ,
